@@ -9,3 +9,5 @@
 * sh data/spring/spring.sh restart  重启 
 * sh data/spring/spring.sh status   查看状态 
 
+http://localhost:8080/spring-fast/swagger-ui.html#
+http://81.68.145.189:8080/spring-fast/swagger-ui.html#
