@@ -2,10 +2,6 @@
   <div class="site-wrapper site-page--login">
     <div class="site-content__wrapper">
       <div class="site-content">
-        <div class="brand-info">
-          <h2 class="brand-info__text">renren-fast-vue</h2>
-          <p class="brand-info__intro">renren-fast-vue基于vue、element-ui构建开发，实现renren-fast后台管理前端功能，提供一套更优的前端解决方案。</p>
-        </div>
         <div class="login-main">
           <h3 class="login-title">管理员登录</h3>
           <el-form :model="dataForm" :rules="dataRule" ref="dataForm" @keyup.enter.native="dataFormSubmit()" status-icon>
@@ -135,33 +131,20 @@
       min-height: 100%;
       padding: 30px 500px 30px 30px;
     }
-    .brand-info {
-      margin: 220px 100px 0 90px;
-      color: #fff;
-    }
-    .brand-info__text {
-      margin:  0 0 22px 0;
-      font-size: 48px;
-      font-weight: 400;
-      text-transform : uppercase;
-    }
-    .brand-info__intro {
-      margin: 10px 0;
-      font-size: 16px;
-      line-height: 1.58;
-      opacity: .6;
-    }
     .login-main {
       position: absolute;
       top: 0;
-      right: 0;
-      padding: 150px 60px 180px;
-      width: 470px;
+      left: calc(50% - 285px);
+      padding: 100px 60px;
+      width: 570px;
       min-height: 100%;
-      background-color: #fff;
+      /*background-color: #fff;*/
     }
     .login-title {
-      font-size: 16px;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 30px;
     }
     .login-captcha {
       overflow: hidden;
@@ -172,6 +155,7 @@
     }
     .login-btn-submit {
       width: 100%;
+      height: 45px;
       margin-top: 38px;
     }
   }
